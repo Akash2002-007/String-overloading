@@ -1,0 +1,14 @@
+public class Top{
+    public void m1(String s){
+        System.out.println("String Version");
+    }
+    public void m1(StringBuffer sb ){
+        System.out.println("StringBuffer Version");
+    }
+    public static void main(String[] arg){
+        Top t=new Top();
+        t.m1("Akash");
+        t.m1(new StringBuffer("Akash"));
+    }
+
+}
