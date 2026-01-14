@@ -1,0 +1,35 @@
+package com.dsa.array;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class StringRemove89 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub//Java 8
+       String str= "programmerg";//"Google";
+      // str.chars().distinct().forEach(ch->System.out.print((char)ch)); java 8
+       
+       //  or                                                java 8
+//       Set<Character> set = new LinkedHashSet<>();
+//
+//       for (char ch : str.toCharArray()) {
+//           set.add(ch);
+//       }
+//
+//       for (char ch : set) {
+//           System.out.print(ch);
+//	}
+       
+       //       or
+       String result = "";
+       for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+           if (result.indexOf(ch) == -1) {
+               result = result + ch;
+           }
+
+       }
+       System.out.println(result);
+       }     
+}
