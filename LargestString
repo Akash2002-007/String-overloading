@@ -1,0 +1,20 @@
+package com.nit.skyio;
+
+public class LargestString {
+
+    public static void main(String[] args) {
+
+        String s = "Java is a powerful programming language";
+
+        String[] s1 = s.split(" ");
+        String largest = s1[0];
+
+        for (int i = 1; i < s1.length; i++) {
+            if (s1[i].length() > largest.length()) {
+                largest = s1[i];
+            }
+        }
+
+        System.out.println("Largest word: " + largest);
+    }
+}
